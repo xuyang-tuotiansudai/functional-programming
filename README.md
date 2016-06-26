@@ -79,7 +79,7 @@ countFn() // 3
 >柯里化，是把接受多个参数的函数变换成接受一个单一参数的函数，并且返回接受余下的参数而且返回结果的新函数的技术。
 
 看文字描述不太容易理解，直接上代码：
-```javascirpt
+```javascript
 var add = function(x, y) {
     return x + y;
 };
@@ -100,7 +100,7 @@ add2(3) // 5
 underscore中有封装好的 [\_.partial](http://underscorejs.org/#partial)
 
 柯里化可以帮助我们更好的简化代码：
-```javascirpt
+```javascript
 var _ =  require('underscore');
 
 // 非柯里化写法
