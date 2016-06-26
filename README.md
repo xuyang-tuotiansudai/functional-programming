@@ -126,7 +126,7 @@ fetchUserInfo({ name: "jerry"}, function(data){
 
 #### 3. 组合(compose)
 直接上代码：
-```
+```javascript
 var compose = function(fn1, fn2) {
   return function(x) {
     return fn1(fn2(x));
@@ -136,7 +136,7 @@ var compose = function(fn1, fn2) {
 OK! 明白了吧，这就是组合。（underscore中有封装好的：[\_.compose](http://underscorejs.org/#compose)）
 
 用途：
-```
+```javascript
 // 需求：把一个字符串去掉首尾空格后转换为数字然后提交给服务器。
 var $ = require('jquery');
 var _ = require('underscore');
